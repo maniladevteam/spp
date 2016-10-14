@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>spp</display-name>
+  <welcome-file-list>
+    <welcome-file>sppaccess</welcome-file>
+  </welcome-file-list>
+
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <realm-name>useraccess</realm-name>
+    <form-login-config>
+      <form-login-page>/login_bu.jsp</form-login-page> 
+      <form-error-page>/loginerror.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+ 
+   <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/admin.jsp</url-pattern>
+      	<url-pattern>/content.jsp</url-pattern>
+      	<url-pattern>/risk.jsp</url-pattern>
+      	<url-pattern>/workgrouprisk.jsp</url-pattern>
+      	<url-pattern>/agent.jsp</url-pattern>
+      	<url-pattern>/controlpanel.jsp</url-pattern>      	
+		<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscoreprodlclist</url-pattern>
+		<url-pattern>/sppscoreprodlclisttimebucket</url-pattern>
+		<url-pattern>/sppscoredetractsupport</url-pattern>
+		<url-pattern>/sppscorefactorbuckets</url-pattern>
+		<url-pattern>/sppscoreprodlc</url-pattern>
+		<url-pattern>/sppscoredetractsupportprodlc</url-pattern>
+		<url-pattern>/sppscorefactorbucketsprodlc</url-pattern>
+		<url-pattern>/sppscorewgtimebucket</url-pattern>
+		<url-pattern>/sppscorewglist</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscoredetractsupportwg</url-pattern>
+		<url-pattern>/sppscorefactorbucketswg</url-pattern>
+		<url-pattern>/sppscoreagtimebucket</url-pattern>
+		<url-pattern>/sppscoreaglist</url-pattern>
+		<url-pattern>/sppscorerawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>	
+		<url-pattern>/spprawadmin</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/content.jsp</url-pattern>
+		<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscoreprodlclist</url-pattern>
+		<url-pattern>/sppscoreprodlclisttimebucket</url-pattern>
+		<url-pattern>/sppscoredetractsupport</url-pattern>
+		<url-pattern>/sppscorefactorbuckets</url-pattern>
+		<url-pattern>/sppscoreprodlc</url-pattern>
+		<url-pattern>/sppscoredetractsupportprodlc</url-pattern>
+		<url-pattern>/sppscorefactorbucketsprodlc</url-pattern>
+		<url-pattern>/sppscorewgtimebucket</url-pattern>
+		<url-pattern>/sppscorewglist</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscoredetractsupportwg</url-pattern>
+		<url-pattern>/sppscorefactorbucketswg</url-pattern>
+		<url-pattern>/sppscoreagtimebucket</url-pattern>
+		<url-pattern>/sppscoreaglist</url-pattern>
+		<url-pattern>/sppscorerawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>	
+		<url-pattern>/spprawadmin</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin_content</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/risk.jsp</url-pattern>
+		<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscoreprodlclist</url-pattern>
+		<url-pattern>/sppscoreprodlclisttimebucket</url-pattern>
+		<url-pattern>/sppscoredetractsupport</url-pattern>
+		<url-pattern>/sppscorefactorbuckets</url-pattern>
+		<url-pattern>/sppscoreprodlc</url-pattern>
+		<url-pattern>/sppscoredetractsupportprodlc</url-pattern>
+		<url-pattern>/sppscorefactorbucketsprodlc</url-pattern>
+		<url-pattern>/sppscorewgtimebucket</url-pattern>
+		<url-pattern>/sppscorewglist</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscoredetractsupportwg</url-pattern>
+		<url-pattern>/sppscorefactorbucketswg</url-pattern>
+		<url-pattern>/sppscoreagtimebucket</url-pattern>
+		<url-pattern>/sppscoreaglist</url-pattern>
+		<url-pattern>/sppscorerawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>	
+		<url-pattern>/spprawadmin</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin_risk</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/workgroup.jsp</url-pattern>
+      	<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/sppworkgrouplist</url-pattern>
+		<url-pattern>/sppagentlist</url-pattern>
+		<url-pattern>/sppworkgroupinfo</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscoredetractsupportwg</url-pattern>
+		<url-pattern>/sppscorefactorbucketswg</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoreagtimebucket</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscoreprodlc</url-pattern>
+		<url-pattern>/sppscorewgrawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>
+		<url-pattern>/spprawwg</url-pattern>
+		<url-pattern>/spprawtm</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>team_manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/workgrouprisk.jsp</url-pattern>
+      	<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/sppworkgrouplist</url-pattern>
+		<url-pattern>/sppagentlist</url-pattern>
+		<url-pattern>/sppworkgroupinfo</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscoredetractsupportwg</url-pattern>
+		<url-pattern>/sppscorefactorbucketswg</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoreagtimebucket</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscoreprodlc</url-pattern>
+		<url-pattern>/sppscorewgrawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>
+		<url-pattern>/spprawwg</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>team_managerrisk</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Secures Pages</web-resource-name>
+      	<url-pattern>/agent.jsp</url-pattern>
+      	<url-pattern>/sppupdatedate</url-pattern>
+		<url-pattern>/sppworkgrouplist</url-pattern>
+		<url-pattern>/sppagentlist</url-pattern>
+		<url-pattern>/sppworkgroupinfo</url-pattern>
+		<url-pattern>/viewfreq</url-pattern>
+		<url-pattern>/sppscorewg</url-pattern>
+		<url-pattern>/sppscore</url-pattern>
+		<url-pattern>/sppscoregroupprodlc</url-pattern>
+		<url-pattern>/sppscorewgrawdata</url-pattern>
+		<url-pattern>/sppscoreviewverbatim</url-pattern>	
+		<url-pattern>/sppaccess</url-pattern>	
+		<url-pattern>/sppscoreag</url-pattern>
+		<url-pattern>/sppscoredetractsupportag</url-pattern>
+		<url-pattern>/sppscorefactorbucketsag</url-pattern>
+		<url-pattern>/sppscoretmagittimebucket</url-pattern>
+		<url-pattern>/sppscoreagitlist</url-pattern>
+
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>specialist</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+   <servlet>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>com.spp.controller</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <url-pattern>/spp-admin/*</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>SppRaw</servlet-name>
+		<servlet-class>com.spp.rawdata.SppAdminRaw</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SppRaw</servlet-name>
+		<url-pattern>/spprawadmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SppRawWg</servlet-name>
+		<servlet-class>com.spp.rawdata.SppWgRaw</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SppRawWg</servlet-name>
+		<url-pattern>/spprawwg</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SppRawTm</servlet-name>
+		<servlet-class>com.spp.rawdata.SppTmRaw</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SppRawTm</servlet-name>
+		<url-pattern>/spprawtm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>GlobalHdprServlet</servlet-name>
+    	<servlet-class>com.spp.roleinfo.GlobalHdprServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>GlobalHdprServlet</servlet-name>
+    	<url-pattern>/sppaccess</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>SppLogOut</servlet-name>
+    	<servlet-class>com.spp.helper.LogoutServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>SppLogOut</servlet-name>
+    	<url-pattern>/logout</url-pattern>
+  	</servlet-mapping>
+	
+</web-app>
